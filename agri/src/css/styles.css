@@ -1,0 +1,5 @@
+/* login form */
+.form_login {
+    display: grid;
+    grid-template-columns: minmax(280px, 400px);
+}
