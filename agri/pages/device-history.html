@@ -30,6 +30,7 @@
       </nav>
 
 
+      <!-- MAIN CONTAINER -->
       <div class="container-xxl gx-0">
         <!-- SIDE NAV -->
         <div class="d-flex">
@@ -47,17 +48,22 @@
                   <li class="accordion-body list-group-item ps-4 fs-6"><a href="#" data-bs-toggle="modal" data-bs-target="#assetMovement"><i class="bi bi-node-plus-fill me-2"></i>New Movement</a></li>
                   <li class="accordion-body list-group-item ps-4 fs-6"><a href="#hardware" class="nav-link" data-bs-toggle="tab"><i class="bi bi-motherboard-fill me-2"></i>Hardware</a></li>
                   <li class="accordion-body list-group-item ps-4 fs-6"><a href="#software" class="nav-link" data-bs-toggle="tab"><i class="bi bi-window-stack me-2"></i>Software</a></li>
+                  <!-- <li class="accordion-body list-group-item ps-4 fs-6"><a href="#software" class="nav-link" data-bs-toggle="tab">Detailed List</a></li> -->
                   <li class="accordion-body list-group-item ps-4 fs-6"><i class="bi bi-wrench-adjustable-circle-fill me-2"></i>Service Support</li>
-                  <li class="accordion-body list-group-item ps-4 fs-6"><i class="bi bi-shop me-2"></i>Vendor</li>
-                  <li class="accordion-body list-group-item ps-4 fs-6"><a href="#home-tab" class="nav-link" data-bs-toggle="tab"><i class="bi bi-droplet-fill"></i>Toner</a></li>
-                  <li class="accordion-body list-group-item ps-4 fs-6"><i class="bi bi-box-seam-fill me-2"></i>Others</li>
                 </ul>
               </div>
-              <!-- <div class="accordion-item">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <i class="bi bi-clipboard2-data-fill me-2"></i>Toner Monitoring
+                  </button>
+                </h2>
                 <ul id="flush-collapseTwo" class="accordion-collapse collapse list-group list-group-flush" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                  <li class="accordion-body list-group-item ps-4 fs-6"><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-receipt me-2"></i>New Transaction</a></li>
+                  <li class="accordion-body list-group-item ps-4 fs-6"><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-receipt me-2"></i>New Transaction</a></li><!-- TONER MODAL BUTTON -->
+                  <li class="accordion-body list-group-item ps-4 fs-6 nav-item"><a href="#transactionHistory" class="nav-link" data-bs-toggle="tab"><i class="bi bi-clock-history me-2"></i>Transaction History</a></li>
+                  <li class="accordion-body list-group-item ps-4 fs-6 nav-item"><a href="#reports" class="nav-link" data-bs-toggle="tab"><i class="bi bi-bar-chart-line-fill me-2"></i>Reports</a></li>
                 </ul>
-              </div> -->
+              </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingThree">
                   <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -91,30 +97,15 @@
                   <li class="accordion-body list-group-item ps-4 fs-6"><a href="#userList" class="nav-link" data-bs-toggle="tab"><i class="bi bi-person-lines-fill me-2"></i>List</a></li>
                 </ul>
               </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="tab" data-bs-target="#transactionHistory" aria-expanded="false" aria-controls="flush-collapseThree">
-                    <i class="bi bi-bar-chart-line-fill me-2"></i>Reports
-                  </button>
-                </h2>
-              </div>
             </div>
           </nav>
+
           
 
           <!-- MAIN SECTION -->
-          <div class="px-1 col">
+          <div class="pt-2 px-3 col">
             <!-- TONER MONITORING TABS -->
             <div class="tab-content">
-              <ul class="nav nav-tabs" id="tonerTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#tonerBalance" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Remaining Balance</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#transactionHistory" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Transaction History</button>
-                </li>
-              </ul>
 
               <div id="transactionHistory" class="container tab-pane fade"><br>
                 <table class="table caption-top">
@@ -170,8 +161,7 @@
                 </table>
               </div>
 
-              <div id="tonerBalance" class="container tab-pane fade"><br>
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>New Transaction</a></button>
+              <div id="reports" class="container tab-pane fade"><br>
                 <table class="table caption-top">
                   <caption>Remaining Balance</caption>
                   <thead class="table-success">
@@ -376,50 +366,12 @@
 
 
               <div id="hardware" class="container tab-pane fade"><br>
-                
-                <ul class="nav nav-tabs mb-2" id="pills-tab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="tab" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Laptop</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">System Unit</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Monitor</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Printer</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Projector</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">UPS</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Router</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Firewall</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Switch</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Access Point</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Mobile Device</button>
-                  </li>
-                </ul>
-
-                <button type="button" class="btn btn-primary py-1" data-bs-toggle="modal" data-bs-target="#newHardware">New</button>
                 <table class="table caption-top">
-                  <caption class="py-1">Hardware Assets</caption>
+                  <caption>Hardware Assets</caption>
                   <thead class="table-success">
                     <tr>
                       <th scope="col">#</th>
-                      <th scope="col">Item</th>
+                      <th scope="col">Device Type</th>
                       <th scope="col">Brand</th>
                       <th scope="col">Model</th>
                       <th scope="col">Asset Tag</th>
@@ -563,12 +515,12 @@
 
                     <div class="mb-2 d-flex justify-content-between">
                         <div>
-                            <label class="form-check-label me-5" for="inboundToner">Inbound:</label>
-                            <input class="form-check-input" type="radio" id="inboundToner" name="transactionType" value="1">
+                            <label class="me-5" for="inbound">Inbound:</label>
+                            <input type="radio" id="inbound" name="transactionType" value="1">
                         </div>
                         <div>
-                            <label class="me-5 form-check-label" for="outboundToner">Outbound:</label>
-                            <input class="form-check-input" type="radio" id="outboundToner" name="transactionType" value="2">
+                            <label class="me-5" for="outbound">Outbound:</label>
+                            <input type="radio" id="outbound" name="transactionType" value="2">
                         </div>
                     </div>
 
@@ -634,15 +586,15 @@
                 <form action="#" method="POST">
 
                   <div class="mb-2 d-flex justify-content-between">
-                    <div>
-                        <label class="form-check-label me-5" for="inboundAsset">Inbound:</label>
-                        <input class="form-check-input" type="radio" id="inboundAsset" name="movementType" value="1">
-                    </div>
-                    <div>
-                        <label class="me-5 form-check-label" for="outboundAsset">Outbound:</label>
-                        <input class="form-check-input" type="radio" id="outboundAsset" name="movementType" value="2">
-                    </div>
-                </div>
+                      <div>
+                          <label class="me-5" for="inbound">Inbound:</label>
+                          <input type="radio" id="inbound" name="transactionType" value="1">
+                      </div>
+                      <div>
+                          <label class="me-5" for="outbound">Outbound:</label>
+                          <input type="radio" id="outbound" name="transactionType" value="2">
+                      </div>
+                  </div>
 
                   <div class="mb-2 d-flex justify-content-between">
                       <label for="date">Date:</label>
@@ -735,100 +687,6 @@
           </div>
         </div>
       </div><!-- END OF MOVEMENT MODAL -->
-
-
-      <!-- NEW HARDWARE MODAL -->
-      <div class="modal fade" data-bs-backdrop="static" id="newHardware" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header py-1">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">New Hardware</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body py-1">
-                <form action="#" method="POST">
-
-                    <div>
-                      <h5>Hardware Info</h5>
-                      <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Asset Tag: </label>
-                        <input class="w-50" type="text" id="yellow" name="yellow_qty">
-                      </div>
-
-                      <div class="mb-2 d-flex justify-content-between">
-                        <label for="source">Item: </label>
-                        <select class="w-50" name="source" id="source">
-                            <option value="1">Laptop</option>
-                            <option value="2">System Unit</option>
-                            <option value="3">Monitor</option>
-                            <option value="3">Printer</option>
-                            <option value="3">Projector</option>
-                            <option value="3">Smartphone</option>
-                            <option value="3">UPS</option>
-                        </select>
-                      </div>
-
-                      <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Brand: </label>
-                        <input class="w-50" type="text" id="yellow" name="yellow_qty">
-                      </div>
-
-                      <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Model: </label>
-                        <input class="w-50" type="text" id="yellow" name="yellow_qty">
-                      </div>
-
-                      <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Processor: </label>
-                        <input class="w-50" type="text" id="yellow" name="yellow_qty">
-                      </div>
-
-                      <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Memory: </label>
-                        <input class="w-50" type="text" id="yellow" name="yellow_qty">
-                      </div>
-
-                      <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Storage: </label>
-                        <input class="w-50" type="text" id="yellow" name="yellow_qty">
-                      </div>
-
-                      <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Serial #: </label>
-                        <input class="w-50" type="text" id="yellow" name="yellow_qty">
-                      </div>
-                    </div>
-
-                    <div>
-                      <h5>Purchase Info</h5>
-                      <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Date Purchased: </label>
-                        <input class="w-50" type="date" id="yellow" name="yellow_qty">
-                      </div>
-
-                      <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Vendor: </label>
-                        <input class="w-50" type="Text" id="yellow" name="yellow_qty">
-                      </div>
-
-                      <div class="mb-2 d-flex justify-content-between">
-                        <label for="yellow">Warranty(Mos.): </label>
-                        <input class="w-50" type="number" id="yellow" name="yellow_qty">
-                      </div>
-                    </div>
-
-
-                  
-
-                  <div class="modal-footer py-1">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="submit" name="submit" class="btn btn-primary">SUBMIT</button>
-                  </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div><!-- END OF NEW HARDWARE MODAL -->
 
 
       <!-- NEW DEPARTMENT MODAL -->
@@ -986,7 +844,7 @@
           </div>
         </div>
       </div><!-- END OF NEW USER MODAL -->
-      </div>
+    </div><!-- END OF MAIN CONTAINER -->
       
 
       
